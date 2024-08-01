@@ -1,4 +1,5 @@
 # Mental Support Chatbot App
+# Sereni Chat
 
 This Streamlit app implements a Mental Support Chatbot using the Google Generative AI model. The chatbot provides a listening ear and support for mental well-being, responding to user inputs with empathy and understanding.
 
@@ -15,7 +16,7 @@ This Streamlit app implements a Mental Support Chatbot using the Google Generati
 2. Run the Streamlit app:
 
     ``
-    streamlit run app.py
+    streamlit run main.py
     ```
 
 ## Usage
