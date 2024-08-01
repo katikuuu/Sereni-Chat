@@ -12,6 +12,10 @@ The chatbot provides a listening ear and support for mental well-being, respondi
    ```
    pip install -r requirements.txt
     ```
+   If you have not initiated a virtual environment for your project/ directory and you don't want to , use
+```
+python -m pip install -r requirements.txt
+```
 
 
 3. Run the Streamlit app:
