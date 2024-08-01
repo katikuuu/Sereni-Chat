@@ -58,7 +58,7 @@ class HomeAppComponents:
         st.markdown(
             """
     Proceed to chat with the AI model.
-    <a href="apps/ai.py" target="_self">Click here to go to the Chat page</a>
+    <a href="apps/ai.py" target="_self">Click on the sidebar to go to the Chat page</a>
             """,
             unsafe_allow_html=True
             
