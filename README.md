@@ -1,6 +1,6 @@
 # Sereni Chat
 
-Using the Google Generative AI model, this Streamlit app implements a Mental Support Chatbot. 
+Using Google Generative AI model, this Streamlit app implements a Mental Support Chatbot. 
 The chatbot provides a listening ear and support for mental well-being, responding to user inputs with empathy and understanding.
 
 ## Getting Started
