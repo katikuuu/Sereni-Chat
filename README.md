@@ -5,6 +5,19 @@ The chatbot provides a listening ear and support for mental well-being, respondi
 
 ## Getting Started
 
+   Don't forget to add a .env file to your project and add your Google generative AI API
+   Your .env file contents should look something like this 
+
+   ```
+   GENAI_API_KEY=YOUR API KEY GOES HERE
+   ```
+   For instancees where you are launching your project on different platforms like streamlit.io or any other ,
+   Go to the app advanced settings and include your API key in TOML format 
+   ```
+   GENAI_API_KEY = "YOUR API KEY GOES HERE"
+
+   ```
+
 1. Install dependencies:
    In your command prompt, 
    write cd then add your location/directory
