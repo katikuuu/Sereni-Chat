@@ -7,15 +7,15 @@ The chatbot provides a listening ear and support for mental well-being, respondi
 
 1. Install dependencies:
    In your command prompt, 
-   write cd then add your location
+   write cd then add your location/directory
    Then Run
    ```
    pip install -r requirements.txt
     ```
    If you have not initiated a virtual environment for your project/ directory and you don't want to , use
-```
-python -m pip install -r requirements.txt
-```
+   ```
+   python -m pip install -r requirements.txt
+   ```
 
 
 3. Run the Streamlit app:
