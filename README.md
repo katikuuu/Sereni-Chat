@@ -9,22 +9,23 @@ The chatbot provides a listening ear and support for mental well-being, respondi
    In your command prompt, 
    write cd then add your location
    Then Run
-    pip install -r requirements.txt
+   ```
+   pip install -r requirements.txt
     ```
 
 
-2. Run the Streamlit app:
+3. Run the Streamlit app:
 
-    ``
+    ```
     streamlit run main.py
     ```
 
 ## Usage
 
-A login and signup is provided.
+A login and signup page is provided is provided.
 An Internet connection is required for the chatbot to run
 
-After login /Signup , 
+After login /Signup, 
 
 1. Enter your messages in the text input field.
 
