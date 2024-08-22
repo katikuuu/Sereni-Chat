@@ -1,9 +1,7 @@
 import streamlit as st
-
 from streamlit_lottie import st_lottie
 from time import sleep
 
-import streamlit as st
 import os
 from dotenv import load_dotenv
 import json
@@ -24,7 +22,20 @@ class HomeAppComponents:
     def init_page() -> None:
         st.set_page_config(
             page_title="Sereni Chat",
-            # page_icon="🏠",
+        )
+        
+        # Google Analytics script
+        st.markdown(
+            """
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-CMEW8XKLRY"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-CMEW8XKLRY');
+            </script>
+            """,
+            unsafe_allow_html=True
         )
 
     @staticmethod
@@ -51,34 +62,23 @@ class HomeAppComponents:
     
     @staticmethod
     def main_page() -> None:
-        
         st.header(body="Sereni Chat", divider='blue')
-        
-
         st.markdown(
             """
-           Click on the sidebar to chat with the AI model.
-
+            Click on the sidebar to chat with the AI model.
             """,
             unsafe_allow_html=True
-            
-           
         )
-        
-        
-        
 
-        # st.write(f"Email: :[**{LoggedinUserInfoSState.get().username}**]")
-    
     @staticmethod
     def signup_page() -> None:
         signup_form = st.form(key="signup_form")
 
         with signup_form:
-            st.header(body=" Signup", divider='blue')
+            st.header(body="Signup", divider='blue')
             username = st.text_input(label="👤 Email / Username", placeholder="Enter your Email / Username...")
             password = st.text_input(label="🔑 Password", type="password", placeholder="Enter your Password...")
-            retype_password = st.text_input(label="✅ Confirm your Password", type="password", placeholder="Retype  Password...")
+            retype_password = st.text_input(label="✅ Confirm your Password", type="password", placeholder="Retype Password...")
             submit_button = st.form_submit_button(label="Signup", type="primary")
 
         if submit_button:
@@ -112,11 +112,9 @@ class HomeAppComponents:
                 else:
                     st.warning(icon="🙅", body=message)
 
-            # st.rerun()
-
     @classmethod
     def select_signup_or_login_page(cls):
-        signup_or_login =  st.radio(label="Kindly Login / Signup to continue", options=["**Login**", "**Signup**"], horizontal=True)
+        signup_or_login = st.radio(label="Kindly Login / Signup to continue", options=["**Login**", "**Signup**"], horizontal=True)
         if signup_or_login == "**Login**":
             cls.login_page()
         else:
@@ -129,9 +127,6 @@ class HomeAppComponents:
         cls.wakeup_lottie()
         
         if LoggedinSState.get():
-            
-            
             cls.main_page()
         else:
             cls.select_signup_or_login_page()
-            # cls.login_page()
