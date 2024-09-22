@@ -5,7 +5,7 @@ The chatbot provides a listening ear and support for mental well-being, respondi
 
 ## Getting Started
 
-   Don't forget to add a .env file to your project and add your Google generative AI API
+   Don't forget to add a .env file to your project and add your Google generative AI API    
    Your .env file contents should look something like this 
 
    ```
