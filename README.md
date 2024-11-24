@@ -11,8 +11,8 @@ The chatbot provides a listening ear and support for mental well-being, respondi
    ```
    GENAI_API_KEY=YOUR API KEY GOES HERE
    ```
-   For instancees where you are launching your project on different platforms like streamlit.io or any other ,
-   Go to the app advanced settings and include your API key in TOML format 
+   For instance when you are launching your project on different platforms like streamlit.io or any other,
+   Go to the app's advanced settings and include your API key in TOML format 
    ```
    GENAI_API_KEY = "YOUR API KEY GOES HERE"
 
@@ -25,7 +25,7 @@ The chatbot provides a listening ear and support for mental well-being, respondi
    ```
    pip install -r requirements.txt
     ```
-   If you have not initiated a virtual environment for your project/ directory and you don't want to , use
+   If you have not initiated a virtual environment for your project/ directory and you don't want to, use
    ```
    python -m pip install -r requirements.txt
    ```
